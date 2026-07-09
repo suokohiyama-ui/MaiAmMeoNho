@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Đăng ký nhận nuôi mèo - FourPaw</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="trangphu/dinhdang.css" type="text/css">
+</head>
+
+<body>
+<header>
+		<div class="Gioithieu">
+			<a href="#home" class="logo"><i class="fas fa-paw"></i>Mái Ấm Mèo Nhỏ - Four Paws</a>
+			<nav class="link">
+				<a href="index.html">Trang chủ</a>
+				<a href="gioithieu.html">Giới thiệu</a>
+				<a href="nhannuoi.html">Nhận nuôi</a>
+				<a href="cuutro.html">Cứu Trợ</a>
+				<a href="lienhe.html">Liên hệ</a>
+			</nav>
+		</div>
+	</header>
+
+	<section class="page-hero">
+		<div class="container">
+			<span class="eyebrow">Hồ sơ nhận nuôi</span>
+			<h1>Đăng ký nhận nuôi mèo</h1>
+			<p>Điền đầy đủ thông tin dưới đây để chúng tôi sắp xếp buổi gặp mặt giữa bạn và bé mèo phù hợp nhất.</p>
+		</div>
+	</section>
+
+	<section class="adopt-form-wrap">
+		<div class="form-progress">
+			<span class="active">01. Người nhận nuôi</span>
+			<span class="active">02. Điều kiện sống</span>
+			<span class="active">03. Mong muốn</span>
+		</div>
+
+		<form id="adopt-form">
+			<div class="form-card">
+				<span class="form-step">Phần 01</span>
+				<h3>Thông tin người nhận nuôi</h3>
+				<div class="field-grid">
+					<div class="field">
+						<label for="fullname">Họ và tên *</label>
+						<input type="text" id="fullname" required placeholder="Nguyễn Văn A">
+					</div>
+					<div class="field">
+						<label for="age">Tuổi *</label>
+						<input type="number" id="age" min="18" required placeholder="25">
+					</div>
+					<div class="field">
+						<label for="phone">Số điện thoại *</label>
+						<input type="tel" id="phone" required placeholder="09xx xxx xxx">
+					</div>
+					<div class="field">
+						<label for="email">Email *</label>
+						<input type="email" id="email" required placeholder="ban@email.com">
+					</div>
+					<div class="field full">
+						<label for="address">Địa chỉ hiện tại *</label>
+						<input type="text" id="address" required placeholder="Số nhà, đường, quận/huyện, tỉnh/thành">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-card">
+				<span class="form-step">Phần 02</span>
+				<h3>Điều kiện sống</h3>
+				<div class="field full">
+					<label>Loại nhà ở *</label>
+					<div class="radio-group">
+						<label class="radio-option"><input type="radio" name="housing" value="nha-rieng" required> Nhà riêng có sân</label>
+						<label class="radio-option"><input type="radio" name="housing" value="nha-rieng-khong-san"> Nhà riêng không sân</label>
+						<label class="radio-option"><input type="radio" name="housing" value="chung-cu"> Chung cư</label>
+						<label class="radio-option"><input type="radio" name="housing" value="nha-thue"> Nhà thuê</label>
+					</div>
+				</div>
+				<div class="field full" style="margin-top:8px">
+					<label>Đã từng nuôi mèo chưa? *</label>
+					<div class="radio-group">
+						<label class="radio-option"><input type="radio" name="experience" value="co" required> Đã từng nuôi</label>
+						<label class="radio-option"><input type="radio" name="experience" value="chua"> Chưa từng</label>
+					</div>
+				</div>
+				<div class="field full" style="margin-top:8px">
+					<label for="current-pets">Hiện đang nuôi mèo/thú khác trong nhà không?</label>
+					<input type="text" id="current-pets" placeholder="Ví dụ: 1 mèo, 1 chó / Không có">
+				</div>
+			</div>
+
+			<div class="form-card">
+				<span class="form-step">Phần 03</span>
+				<h3>Mong muốn nhận nuôi</h3>
+				<div class="field-grid">
+					<div class="field full">
+						<label for="pet-code">Mã số mèo muốn nhận (nếu có)</label>
+						<input type="text" id="pet-code" placeholder="Ví dụ: 127, 171, 145...">
+					</div>
+					<div class="field full">
+						<label for="reason">Lý do bạn muốn nhận nuôi *</label>
+						<textarea id="reason" required placeholder="Chia sẻ một chút về lý do và mong muốn của bạn..."></textarea>
+					</div>
+				</div>
+				<label class="confirm-check">
+					<input type="checkbox" required>
+					Tôi cam kết chăm sóc bé mèo lâu dài, không bỏ rơi hoặc bán lại, và đồng ý để Mái Ấm Mèo Nhỏ thăm hỏi định kỳ.
+				</label>
+				<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+					<i class="fas fa-paper-plane"></i> Gửi đăng ký
+				</button>
+			</div>
+		</form>
+
+		<div class="form-success">
+			<i class="fas fa-circle-check"></i>
+			<h3>Đã nhận được hồ sơ của bạn!</h3>
+			<p>Đội ngũ Mái Ấm Mèo Nhỏ sẽ liên hệ lại trong 2–3 ngày để sắp xếp buổi gặp mặt. Cảm ơn bạn đã muốn cho một bé mèo một ngôi nhà mới 🐾</p>
+		</div>
+	</section>
+
+	<footer id="contact">
+		<div class="container">
+			<div class="foot-grid">
+				<div>
+					<span class="foot-logo"><i class="fas fa-paw"></i> Mái Ấm Mèo Nhỏ - Four Paws</span>
+					<div class="foot-social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tiktok"></i></a>
+					</div>
+				</div>
+				<div>
+					<h4>Khám phá</h4>
+					<ul>
+						<li><a href="../trangchu/New folder/nhanmeo.html#adopt">Nhận nuôi</a></li>
+						<li><a href="../trangchu/New folder/nhanmeo.html#trogiup">Cứu trợ</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Liên hệ</h4>
+					<ul>
+						<li><i class="fas fa-location-dot"></i> Phòng Cảnh sát hình sự<br>Số 9 Xa lộ Hà Nội, phường Tăng Nhơn Phú, TP Hồ Chí Minh</li>
+						<li><i class="fas fa-phone"></i> +8428 3897 2025</li>
+						<li>Giờ hoạt động: 9h-17h tất cả các ngày trong tuần</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Thông tin sinh viên</h4>
+					<ul>
+						<li><i class="fas fa-user"></i> Họ và tên:Nguyễn Ngọc Thảo Ly</li>
+						<li><i class="fas fa-graduation-cap"></i> Lớp: CD25TKDH</li>
+					</ul>
+				</div>
+			</div>
+			<div class="foot-bottom">
+				<span><i class="fas fa-paw"></i> Mái Ấm Mèo Nhỏ - Four Paws. Mọi đóng góp đều được công khai minh bạch.</span>
+				<span>Đồ án thiết kế web</span>
+			</div>
+		</div>
+	</footer>
+
+	<script src="trangphu/javaform.js"></script>
+</body>
+</html>
